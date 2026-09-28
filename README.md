@@ -8,7 +8,7 @@
 
 Librería de **componentes visuales en JavaScript puro** (sin React, Vue ni frameworks).
 
-**Demo en vivo:** https://TU-USUARIO.github.io/Actividad3/
+**Demo en vivo:** https://angelsixto.github.io/Actividad3_Programacion-Web/
 
 ---
 
