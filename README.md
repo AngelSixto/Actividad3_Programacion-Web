@@ -51,7 +51,7 @@ Actividad3/
 <script src="js/componente.js"></script>
 ```
 
-¡Listo! Ya tienes disponible el objeto global `Chispa`.
+¡Listo! Ya tienes disponible el objeto global.
 
 ---
 
