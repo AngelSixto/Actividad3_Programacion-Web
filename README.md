@@ -184,6 +184,6 @@ destinos.reproducir(); // lo reanuda
 
 ## Video demo
 
-[![Ver video](img/miniatura-video.png)](https://youtu.be/TU-VIDEO)
+[![Ver video](img/miniatura-video.png)](https://youtu.be/sOFw9PwYY0Q)
 
 ---
