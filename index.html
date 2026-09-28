@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad 3 - Componentes Visuales</title>
+
+  <!-- CSS de los componentes -->
+  <link rel="stylesheet" href="css/componente.css">
+
+  <!-- CSS de esta página -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Componentes Visuales con JS</h1>
+    <p>Tarjeta giratoria y carrusel de imágenes</p>
+  </header>
+
+  <main>
+    <!-- COMPONENTE 1 -->
+    <section>
+      <h2>Tarjeta giratoria</h2>
+      <p>Muestra una imagen al frente y la información atrás. Dale clic para voltearla.</p>
+      <div class="fila">
+        <div id="tarjeta1"></div>
+        <div id="tarjeta2"></div>
+        <div id="tarjeta3"></div>
+      </div>
+    </section>
+
+    <!-- COMPONENTE 2 -->
+    <section>
+      <h2>Carrusel de imágenes</h2>
+      <p>Avanza solo, se desliza con el dedo o el mouse y funciona con las flechas del teclado.</p>
+      <div id="carruselDestinos"></div>
+      <div class="controles">
+        <button class="btn" id="btnAnterior">◀ Anterior</button>
+        <button class="btn" id="btnSiguiente">Siguiente ▶</button>
+        <button class="btn" id="btnPrimero">Ir al primero</button>
+      </div>
+    </section>
+
+    <!-- CÓMO SE USA -->
+    <section class="codigo">
+      <span class="etiqueta">Código</span>
+      <h2>Así de fácil se usa</h2>
+
+      <h3>1. Incluye el CSS y el JS</h3>
+<pre><code>&lt;link rel="stylesheet" href="css/componente.css"&gt;
+&lt;script src="js/componente.js"&gt;&lt;/script&gt;</code></pre>
+
+      <h3>2. Tarjeta giratoria</h3>
+<pre><code>&lt;div id="miTarjeta"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  crearTarjeta('#miTarjeta', {
+    imagen: 'img/foto.jpg',
+    titulo: 'Ajolote',
+    texto: 'Puede regenerar partes de su cuerpo.',
+    color: '#db2777'
+  });
+&lt;/script&gt;</code></pre>
+
+      <h3>3. Carrusel de imágenes</h3>
+<pre><code>&lt;div id="miCarrusel"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+  const carrusel = new Carrusel('#miCarrusel', {
+    altura: '420px',
+    intervalo: 5000,
+    slides: [
+      { imagen: 'img/foto1.jpg', titulo: 'Playa', texto: 'Arena blanca' },
+      { imagen: 'img/foto2.jpg', titulo: 'Bosque', texto: 'Aire fresco' }
+    ]
+  });
+
+  carrusel.siguiente(); // también: anterior(), irA(0), pausar(), reproducir()
+&lt;/script&gt;</code></pre>
+    </section>
+  </main>
+
+  <footer>Actividad 3 · Componente Visual con JS</footer>
+
+  <!-- JS de los componentes -->
+  <script src="js/componente.js"></script>
+
+  <!-- JS de esta página (aquí se usan los componentes) -->
+  <script src="js/main.js"></script>
+</body>
+</html>
